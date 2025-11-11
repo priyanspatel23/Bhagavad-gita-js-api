@@ -85,7 +85,7 @@ This project uses the **Vedic Scriptures API** for fetching chapter data:
 Front-End Developer | Bhagavad Gita Digital Project
 
 📧 Email: *priyansbhai250@gmail.com*  
-🐙 GitHub: *[https://github.com/YOUR_USERNAME](https://github.com/priyanspatel23)*
+🐙 GitHub: *[https://github.com/priyanspatel23](https://github.com/priyanspatel23)*
 
 ---
 
