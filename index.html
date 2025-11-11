@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhagavad Gita - 3D Book</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="cover cover-left"></div>
+      <div class="cover cover-right"></div>
+
+      <div class="book">
+        <!-- LEFT COVER PAGE -->
+        <div class="book-page page-left d-flex align-items-center">
+          <div class="profile-page text-center">
+            <img src="./images/logo.png" alt="">
+            <div class="cover-img">
+              <img src="./images/cover.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- INDEX PAGE -->
+        <div class="book-page page-right turn" id="turn-1">
+          <div class="page-front">
+            <h2 style="text-align: center;">📖 Index – Bhagavad Gita</h2>
+            <div
+              id="chapters-container"
+              style="
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+                font-size: 14.5px;
+                overflow-y: auto;
+                padding: 10px;
+              "
+            >
+              <p>Loading Bhagavad Gita chapters...</p>
+            </div>
+            <span class="number-page">1</span>
+            <span class="nextprev-btn" data-page="turn-1">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-1.png" alt="">
+            </div>
+            <span class="number-page">2</span>
+            <span class="nextprev-btn back" data-page="turn-1">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+
+        <div class="book-page page-right turn" id="turn-2">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">3</span>
+            <span class="nextprev-btn" data-page="turn-2">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-2.png" alt="">
+            </div>
+            <span class="number-page">4</span>
+            <span class="nextprev-btn back" data-page="turn-2">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="book-page page-right turn" id="turn-3">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">5</span>
+            <span class="nextprev-btn" data-page="turn-3">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-3.png" alt="">
+            </div>
+            <span class="number-page">6</span>
+            <span class="nextprev-btn back" data-page="turn-3">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="book-page page-right turn" id="turn-4">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">7</span>
+            <span class="nextprev-btn" data-page="turn-4">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-4.png" alt="">
+            </div>
+            <span class="number-page">8</span>
+            <span class="nextprev-btn back" data-page="turn-4">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="book-page page-right turn" id="turn-5">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">9</span>
+            <span class="nextprev-btn" data-page="turn-5">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-5.png" alt="">
+            </div>
+            <span class="number-page">10</span>
+            <span class="nextprev-btn back" data-page="turn-5">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="book-page page-right turn" id="turn-6">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">11</span>
+            <span class="nextprev-btn" data-page="turn-6">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-6.png" alt="">
+            </div>
+            <span class="number-page">12</span>
+            <span class="nextprev-btn back" data-page="turn-6">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="book-page page-right turn" id="turn-7">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">13</span>
+            <span class="nextprev-btn" data-page="turn-7">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-7.png" alt="">
+            </div>
+            <span class="number-page">14</span>
+            <span class="nextprev-btn back" data-page="turn-7">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+       
+        <div class="book-page page-right turn" id="turn-8">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">15</span>
+            <span class="nextprev-btn" data-page="turn-8">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-8.png" alt="">
+            </div>
+            <span class="number-page">16</span>
+            <span class="nextprev-btn back" data-page="turn-8">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+
+        <div class="book-page page-right turn" id="turn-9">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">17</span>
+            <span class="nextprev-btn" data-page="turn-9">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-9.png" alt="">
+            </div>
+            <span class="number-page">18</span>
+            <span class="nextprev-btn back" data-page="turn-9">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="book-page page-right turn" id="turn-10">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">19</span>
+            <span class="nextprev-btn" data-page="turn-10">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-10.png" alt="">
+            </div>
+            <span class="number-page">20</span>
+            <span class="nextprev-btn back" data-page="turn-10">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="book-page page-right turn" id="turn-11">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">21</span>
+            <span class="nextprev-btn" data-page="turn-11">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-11.png" alt="">
+            </div>
+            <span class="number-page">22</span>
+            <span class="nextprev-btn back" data-page="turn-11">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="book-page page-right turn" id="turn-12">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">23</span>
+            <span class="nextprev-btn" data-page="turn-12">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-12.png" alt="">
+            </div>
+            <span class="number-page">24</span>
+            <span class="nextprev-btn back" data-page="turn-12">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+         <div class="book-page page-right turn" id="turn-13">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">25</span>
+            <span class="nextprev-btn" data-page="turn-13">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-13.png" alt="">
+            </div>
+            <span class="number-page">26</span>
+            <span class="nextprev-btn back" data-page="turn-13">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+         <div class="book-page page-right turn" id="turn-14">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">27</span>
+            <span class="nextprev-btn" data-page="turn-14">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-14.png" alt="">
+            </div>
+            <span class="number-page">28</span>
+            <span class="nextprev-btn back" data-page="turn-14">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+         <div class="book-page page-right turn" id="turn-15">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">29</span>
+            <span class="nextprev-btn" data-page="turn-15">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-15.png" alt="">
+            </div>
+            <span class="number-page">30</span>
+            <span class="nextprev-btn back" data-page="turn-15">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+
+         <div class="book-page page-right turn" id="turn-16">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">31</span>
+            <span class="nextprev-btn" data-page="turn-16">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-16.png" alt="">
+            </div>
+            <span class="number-page">32</span>
+            <span class="nextprev-btn back" data-page="turn-16">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+         <div class="book-page page-right turn" id="turn-17">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">33</span>
+            <span class="nextprev-btn" data-page="turn-17">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-17.png" alt="">
+            </div>
+            <span class="number-page">34</span>
+            <span class="nextprev-btn back" data-page="turn-17">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+         <div class="book-page page-right turn" id="turn-18">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">35</span>
+            <span class="nextprev-btn" data-page="turn-18">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="cover-img">
+              <img src="./images/अध्याय-18.png" alt="">
+            </div>
+            <span class="number-page">36</span>
+            <span class="nextprev-btn back" data-page="turn-18">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="book-page page-right turn" id="turn-19">
+          <div class="page-front">
+            <div class="chapter-summary"></div>
+            <span class="number-page">37</span>
+            <span class="nextprev-btn" data-page="turn-19">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <div class="page-back">
+            <div class="last-page cover-img">
+              <img src="./images/dhanyawad.png" alt="">
+            </div>
+            
+            <span class="number-page">38</span>
+            <span class="nextprev-btn back" data-page="turn-19">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
