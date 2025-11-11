@@ -53,10 +53,10 @@ This project opens like a real book with smooth flip animations and dynamic chap
 
 ---
 
-## 🎬 Demo Video
+## 🎬 Demo gif
 
-[![Watch the video](![12 11 2025_00 16 33_REC (online-video-cutter com) (1)](https://github.com/user-attachments/assets/fecdf5c8-5839-40d7-9ff4-d77dc91b8fdf)
-)
+![12 11 2025_00 16 33_REC (online-video-cutter com) (1)](https://github.com/user-attachments/assets/fecdf5c8-5839-40d7-9ff4-d77dc91b8fdf)
+
 
 > 💡 Replace `YOUR_FILE_ID` with your actual Google Drive video ID.
 
